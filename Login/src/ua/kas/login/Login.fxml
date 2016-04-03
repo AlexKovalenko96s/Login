@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.kas.login.Controller_login">
+   <children>
+      <Label layoutX="306.0" layoutY="38.0" text="Login">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textLOGIN" layoutX="276.0" layoutY="127.0" promptText="login" />
+      <Label layoutX="213.0" layoutY="130.0" text="Login :">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="189.0" text="Password :">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="textPASSWORD" layoutX="276.0" layoutY="187.0" promptText="password" />
+      <Label fx:id="uncorrect" alignment="CENTER" layoutX="216.0" layoutY="222.0" prefHeight="20.0" prefWidth="269.0" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="251.0" layoutY="250.0" mnemonicParsing="false" onAction="#log_in" prefHeight="77.0" prefWidth="198.0" text="Log in">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="309.0" layoutY="336.0" mnemonicParsing="false" onAction="#sign_up" text="Sign up">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
